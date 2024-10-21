@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainwindowMHZOiE.ui'
+## Form generated from reading UI file 'mainwindowgcdRlM.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1108, 614)
+        MainWindow.resize(1130, 614)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -58,9 +58,35 @@ class Ui_MainWindow(object):
         self.tab_cameras.setObjectName(u"tab_cameras")
         self.tab_thermal_image = QWidget()
         self.tab_thermal_image.setObjectName(u"tab_thermal_image")
+        self.horizontalLayout_16 = QHBoxLayout(self.tab_thermal_image)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.horizontalLayout_16.setContentsMargins(0, 0, 0, 0)
+        self.thermal_image = QFrame(self.tab_thermal_image)
+        self.thermal_image.setObjectName(u"thermal_image")
+        self.thermal_image.setFrameShape(QFrame.Shape.StyledPanel)
+        self.thermal_image.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_7 = QVBoxLayout(self.thermal_image)
+        self.verticalLayout_7.setSpacing(0)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.layout_thermal_image = QVBoxLayout()
+        self.layout_thermal_image.setObjectName(u"layout_thermal_image")
+
+        self.verticalLayout_7.addLayout(self.layout_thermal_image)
+
+
+        self.horizontalLayout_16.addWidget(self.thermal_image)
+
+        self.horizontalLayout_16.setStretch(0, 10)
         self.tab_cameras.addTab(self.tab_thermal_image, "")
         self.tab_RGB_image = QWidget()
         self.tab_RGB_image.setObjectName(u"tab_RGB_image")
+        self.verticalLayoutWidget = QWidget(self.tab_RGB_image)
+        self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
+        self.verticalLayoutWidget.setGeometry(QRect(0, 0, 581, 531))
+        self.layout_RGB_image = QVBoxLayout(self.verticalLayoutWidget)
+        self.layout_RGB_image.setObjectName(u"layout_RGB_image")
+        self.layout_RGB_image.setContentsMargins(0, 0, 0, 0)
         self.tab_cameras.addTab(self.tab_RGB_image, "")
 
         self.verticalLayout_2.addWidget(self.tab_cameras)
@@ -417,7 +443,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1108, 33))
+        self.menubar.setGeometry(QRect(0, 0, 1130, 33))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -425,7 +451,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tab_cameras.setCurrentIndex(1)
+        self.tab_cameras.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
