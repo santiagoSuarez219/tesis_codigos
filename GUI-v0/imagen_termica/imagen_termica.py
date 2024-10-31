@@ -35,8 +35,6 @@ class Grafica(QLabel):
         self.setPixmap(QPixmap.fromImage(qimg))
 
 
-
-
 class ImagenTermica(QThread):
     actualizar_labels_signal = Signal(float, float, float)
 

@@ -54,6 +54,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+
+
         self.tab_cameras = QTabWidget(self.frame_cameras)
         self.tab_cameras.setObjectName(u"tab_cameras")
         self.tab_thermal_image = QWidget()
@@ -87,13 +89,18 @@ class Ui_MainWindow(object):
         self.layout_RGB_image = QVBoxLayout(self.verticalLayoutWidget)
         self.layout_RGB_image.setObjectName(u"layout_RGB_image")
         self.layout_RGB_image.setContentsMargins(0, 0, 0, 0)
+        self.layout_RGB_image.setSpacing(0)
+        self.layout_RGB_image.setStretch(0, 1)
+        
         self.tab_cameras.addTab(self.tab_RGB_image, "")
-
         self.verticalLayout_2.addWidget(self.tab_cameras)
 
+        self.label_rgb_image = QLabel(self.tab_RGB_image)
+        self.label_rgb_image.setObjectName("label_rgb_image")
+        self.label_rgb_image.setAlignment(Qt.AlignCenter)
+        self.layout_RGB_image.addWidget(self.label_rgb_image)
 
         self.horizontalLayout_2.addWidget(self.frame_cameras)
-
         self.frame_temperature_graphics = QFrame(self.frame_visual)
         self.frame_temperature_graphics.setObjectName(u"frame_temperature_graphics")
         self.frame_temperature_graphics.setFrameShape(QFrame.Shape.StyledPanel)
