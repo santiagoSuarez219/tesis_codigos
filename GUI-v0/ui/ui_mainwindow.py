@@ -85,7 +85,7 @@ class Ui_MainWindow(object):
         self.tab_RGB_image.setObjectName(u"tab_RGB_image")
         self.verticalLayoutWidget = QWidget(self.tab_RGB_image)
         self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(0, 0, 581, 531))
+        self.verticalLayoutWidget.setGeometry(QRect(0, 0, 600, 600))
         self.layout_RGB_image = QVBoxLayout(self.verticalLayoutWidget)
         self.layout_RGB_image.setObjectName(u"layout_RGB_image")
         self.layout_RGB_image.setContentsMargins(0, 0, 0, 0)
@@ -108,19 +108,25 @@ class Ui_MainWindow(object):
         self.verticalLayout_5 = QVBoxLayout(self.frame_temperature_graphics)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
+
         self.frame_max_temperature = QFrame(self.frame_temperature_graphics)
         self.frame_max_temperature.setObjectName(u"frame_max_temperature")
         self.frame_max_temperature.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_max_temperature.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_7 = QHBoxLayout(self.frame_max_temperature)
+        self.horizontalLayout_7.setSpacing(0)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.horizontalLayout_7.setContentsMargins(-1, 0, 9, -1)
+        self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.max_temperature_container = QWidget(self.frame_max_temperature)
         self.max_temperature_container.setObjectName(u"max_temperature_container")
-
+        self.verticalLayout_8 = QVBoxLayout(self.max_temperature_container)
+        self.verticalLayout_8.setSpacing(0)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.vertical_layout_max_temperature = QVBoxLayout()
+        self.vertical_layout_max_temperature.setObjectName(u"vertical_layout_max_temperature")
+        self.verticalLayout_8.addLayout(self.vertical_layout_max_temperature)
         self.horizontalLayout_7.addWidget(self.max_temperature_container)
-
-
         self.verticalLayout_5.addWidget(self.frame_max_temperature)
 
         self.frame_mean_temperature = QFrame(self.frame_temperature_graphics)
@@ -128,14 +134,19 @@ class Ui_MainWindow(object):
         self.frame_mean_temperature.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_mean_temperature.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_8 = QHBoxLayout(self.frame_mean_temperature)
+        self.horizontalLayout_8.setSpacing(0)
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
-        self.horizontalLayout_8.setContentsMargins(-1, -1, -1, 0)
+        self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
         self.mean_temperature_container = QWidget(self.frame_mean_temperature)
         self.mean_temperature_container.setObjectName(u"mean_temperature_container")
-
+        self.verticalLayout_9 = QVBoxLayout(self.mean_temperature_container)
+        self.verticalLayout_9.setSpacing(0)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.vertical_layout_mean_temperature = QVBoxLayout()
+        self.vertical_layout_mean_temperature.setObjectName(u"vertical_layout_mean_temperature")
+        self.verticalLayout_9.addLayout(self.vertical_layout_mean_temperature)
         self.horizontalLayout_8.addWidget(self.mean_temperature_container)
-
-
         self.verticalLayout_5.addWidget(self.frame_mean_temperature)
 
 
