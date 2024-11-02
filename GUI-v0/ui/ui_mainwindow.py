@@ -342,66 +342,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addWidget(self.setpoint_value)
 
-        self.frame_P_control = QFrame(self.frame_control_params)
-        self.frame_P_control.setObjectName(u"frame_P_control")
-        self.frame_P_control.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_P_control.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.frame_P_control)
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.control_P_label = QLabel(self.frame_P_control)
-        self.control_P_label.setObjectName(u"control_P_label")
-
-        self.horizontalLayout_3.addWidget(self.control_P_label)
-
-        self.control_P_value = QDoubleSpinBox(self.frame_P_control)
-        self.control_P_value.setObjectName(u"control_P_value")
-
-        self.horizontalLayout_3.addWidget(self.control_P_value)
-
-
-        self.verticalLayout_6.addWidget(self.frame_P_control)
-
-        self.frame_I_control = QFrame(self.frame_control_params)
-        self.frame_I_control.setObjectName(u"frame_I_control")
-        self.frame_I_control.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_I_control.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_4 = QHBoxLayout(self.frame_I_control)
-        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.control_I_label = QLabel(self.frame_I_control)
-        self.control_I_label.setObjectName(u"control_I_label")
-
-        self.horizontalLayout_4.addWidget(self.control_I_label)
-
-        self.control_I_value = QDoubleSpinBox(self.frame_I_control)
-        self.control_I_value.setObjectName(u"control_I_value")
-
-        self.horizontalLayout_4.addWidget(self.control_I_value)
-
-
-        self.verticalLayout_6.addWidget(self.frame_I_control)
-
-        self.frame_D_control = QFrame(self.frame_control_params)
-        self.frame_D_control.setObjectName(u"frame_D_control")
-        self.frame_D_control.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_D_control.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_5 = QHBoxLayout(self.frame_D_control)
-        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.control_D_label = QLabel(self.frame_D_control)
-        self.control_D_label.setObjectName(u"control_D_label")
-
-        self.horizontalLayout_5.addWidget(self.control_D_label)
-
-        self.control_D_value = QDoubleSpinBox(self.frame_D_control)
-        self.control_D_value.setObjectName(u"control_D_value")
-
-        self.horizontalLayout_5.addWidget(self.control_D_value)
-
-
-        self.verticalLayout_6.addWidget(self.frame_D_control)
-
         self.pushButton = QPushButton(self.frame_control_params)
         self.pushButton.setObjectName(u"pushButton")
 
@@ -481,23 +421,20 @@ class Ui_MainWindow(object):
         self.tab_cameras.setTabText(self.tab_cameras.indexOf(self.tab_RGB_image), QCoreApplication.translate("MainWindow", u"RGB", None))
         self.parametros_termicos_label.setText(QCoreApplication.translate("MainWindow", u"Parametros termicos", None))
         self.temperatura_maxima.setText(QCoreApplication.translate("MainWindow", u"Temperatura maxima:", None))
-        self.temperatura_maxima_value.setText(QCoreApplication.translate("MainWindow", u"43 \u00b0C", None))
+        self.temperatura_maxima_value.setText(QCoreApplication.translate("MainWindow", u"45.02 \u00b0C", None))
         self.temperatura_minima.setText(QCoreApplication.translate("MainWindow", u"Temperatura minima:", None))
-        self.temperatura_minima_value.setText(QCoreApplication.translate("MainWindow", u"36 \u00b0C", None))
+        self.temperatura_minima_value.setText(QCoreApplication.translate("MainWindow", u"44.25 \u00b0C", None))
         self.temperatura_promedio.setText(QCoreApplication.translate("MainWindow", u"Temperatura promedio", None))
-        self.temperatura_promedio_value.setText(QCoreApplication.translate("MainWindow", u"35 \u00b0C", None))
+        self.temperatura_promedio_value.setText(QCoreApplication.translate("MainWindow", u"44.85 \u00b0C", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Rango de sensibilidad", None))
         self.label_sensibility_range.setText(QCoreApplication.translate("MainWindow", u"Limite inferior", None))
         self.label_sensibility_range_superior.setText(QCoreApplication.translate("MainWindow", u"Limite superior", None))
         self.control_temperatura_label.setText(QCoreApplication.translate("MainWindow", u"Control de temperatura", None))
         self.setpoint_label.setText(QCoreApplication.translate("MainWindow", u"Temperatura deseada", None))
-        self.control_P_label.setText(QCoreApplication.translate("MainWindow", u"P", None))
-        self.control_I_label.setText(QCoreApplication.translate("MainWindow", u"I", None))
-        self.control_D_label.setText(QCoreApplication.translate("MainWindow", u"D", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Enviar", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"INICIAR TERAPIA", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"DETENER TERAPIA", None))
         self.time_label.setText(QCoreApplication.translate("MainWindow", u"Tiempo transcurrido", None))
-        self.time_value.setText(QCoreApplication.translate("MainWindow", u"0:00", None))
+        self.time_value.setText(QCoreApplication.translate("MainWindow", u"6:56", None))
     # retranslateUi
 
