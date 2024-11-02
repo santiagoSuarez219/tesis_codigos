@@ -9,7 +9,7 @@ class ContenedorGraficaPromedio(QThread):
         super(ContenedorGraficaPromedio, self).__init__() 
         self.grafica = grafica
         self.data_promedio = []
-    
+
     def run(self):
         while True:
             self.actualizar_datos()
@@ -30,9 +30,9 @@ class GraficaTemperaturaPromedio(FigureCanvasQTAgg):
         
     def actualizar_graficas(self, data):
         self.g.clear()
-        self.g.plot(data, '-o')
+        self.g.plot(data)
         self.g.set_ylim(25, 50)
-        self.g.set_xlim(0, 100)
+        self.g.set_xlim(0, 200)
         self.g.grid()
         self.g.set_title("Temperatura Promedio (°C)", fontsize=10)
         self.g.tick_params(axis='both', which='major', labelsize=8)
